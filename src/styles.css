@@ -1,3 +1,28 @@
+header {
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
 body {
-    background-color: blue;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 100px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+#content img {
+    height:300px;
 }
