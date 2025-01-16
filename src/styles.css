@@ -6,6 +6,11 @@ header {
 
 body {
     height: 100vh;
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:26px;
+    font-style: normal;
 }
 
 h1 {
@@ -23,6 +28,26 @@ h1 {
     height: 100%;
 }
 
-#content img {
+#content img.logo {
     height:300px;
+}
+
+#content p.description {
+    width: 500px;
+    text-align: center;
+}
+
+nav button {
+    border: 0;
+    background: none;
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size:26px;
+    font-style: normal;
+}
+
+nav button:hover {
+    color: rgb(40, 79, 220);
+    cursor: pointer;
 }
