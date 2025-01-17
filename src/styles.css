@@ -45,9 +45,14 @@ nav button {
     font-weight: 400;
     font-size:26px;
     font-style: normal;
+    text-underline-offset: 5px;
 }
 
 nav button:hover {
     color: rgb(40, 79, 220);
     cursor: pointer;
+}
+
+nav button.selected{
+    text-decoration: underline;
 }

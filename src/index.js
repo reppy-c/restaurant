@@ -10,6 +10,14 @@ let buttonHome = document.querySelector('#btn-home');
 let buttonMenu = document.querySelector('#btn-menu');
 let buttonAbout = document.querySelector('#btn-about');
 
-buttonHome.addEventListener('mouseup', () => { renderHome(); })
-buttonMenu.addEventListener('mouseup', () => { renderMenu(); })
-buttonAbout.addEventListener('mouseup', () => { renderAbout(); })
+function buttonSelect(button) {
+    buttonHome.classList.remove('selected');
+    buttonMenu.classList.remove('selected');
+    buttonAbout.classList.remove('selected');
+
+    button.classList.add('selected');
+}
+
+buttonHome.addEventListener('mouseup', () => { renderHome(); buttonSelect(buttonHome); })
+buttonMenu.addEventListener('mouseup', () => { renderMenu(); buttonSelect(buttonMenu); })
+buttonAbout.addEventListener('mouseup', () => { renderAbout(); buttonSelect(buttonAbout); })
