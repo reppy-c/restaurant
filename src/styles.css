@@ -5,7 +5,7 @@ header {
 }
 
 body {
-    height: 100vh;
+    height: 90vh;
     font-family: "Texturina", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -26,6 +26,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    gap: 25px;
 }
 
 #content img.logo {
@@ -35,6 +36,7 @@ h1 {
 #content p.description {
     width: 500px;
     text-align: center;
+    margin: 0;
 }
 
 nav button {
@@ -55,4 +57,74 @@ nav button:hover {
 
 nav button.selected{
     text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 720px;
+    align-items: center;
+}
+
+.menu-item img {
+    width: 284px;
+    height: 177px;
+}
+
+.menu-item .menu-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-item h3 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.menu-item .menu-desc {
+    font-size: 15px;
+    margin: 0;
+}
+
+.menu-item .menu-blurb {
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 200;
+    margin: 0;
+}
+
+.menu-item .menu-price {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    width:700px;
+}
+
+.about img {
+    height: 600px;
+    width: auto;
+}
+
+.about-title {
+    font-size:24px;
+}
+
+.about-description {
+    text-align: left;
+    margin: 0;
+    font-size:18px;
 }
